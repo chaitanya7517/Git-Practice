@@ -6,39 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Number Gession Game</h1>
-    <p>We have selected a random number between 1 and 100. See if you can guess it in 10 turns or fewer. We'll tell you if your guess was too high or too low.</p>
-    <div>
-        <span>Enter a guess: 
-            <input type="text" id="btn">
-            <input  onclick="validate()" type="button" value="Submit guess">
-        </span>
-        <p id="first"></p>
-    </div>
-    <script>
-        let flag=false;
-        let random_num;
-        let totalCount=0;
-        function validate() {
-            let num = document.getElementById("btn").value;
-            var paragraph= document.getElementById("first");
-            if(flag==false) {
-                //generate a random number;
-                flag=true;
-                random_num = Math.floor((Math.random()*10)+1);
-            }
-            totalCount++;
-            if(num<random_num) { 
-                paragraph.innerHTML = "Enter greater number";
-            }else if(num>random_num) {
-                paragraph.innerHTML = "Enter smaller number";
-            }
-            else {
-                paragraph.innerHTML = `U are correct : total attempt-> ${totalCount}`;
-                flag=false;
-                totalCount=0;
-            }
-        }
-    </script>
+    <h1> Hello world </h1>
+    
 </body>
 </html>
